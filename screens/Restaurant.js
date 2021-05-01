@@ -299,7 +299,7 @@ const Restaurant = ({route, navigation}) => {
                 borderRadius: SIZES.radius,
               }}
               onPress={() =>
-                navigation.navigate('OrderDelivery', {
+                navigation.navigate('Explore', {
                   restaurant: restaurant,
                 })
               }>

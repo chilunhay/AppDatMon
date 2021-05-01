@@ -40,7 +40,7 @@ const MainTabScreen = () => (
       name="Explore"
       component={ExploreStackScreen}
       options={{
-        tabBarLabel: 'Map',
+        tabBarLabel: 'Bản đồ',
         tabBarColor: '#FF6347',
         tabBarIcon: ({color}) => (
           <Icon name="ios-map" color={color} size={26} />
@@ -125,7 +125,13 @@ const HomeStackScreen = ({navigation}) => {
           ),
         }}
       />
-      <HomeStack.Screen name="Restaurant" component={Restaurant} />
+      <HomeStack.Screen
+        name="Restaurant"
+        component={Restaurant}
+        options={{
+          title: 'Đặt món',
+        }}
+      />
     </HomeStack.Navigator>
   );
 };
@@ -142,7 +148,7 @@ const ExploreStackScreen = ({navigation}) => {
         headerTintColor: colors.text,
       }}>
       <ExploreStack.Screen
-        name="Map"
+        name="Bản đồ"
         component={ExploreScreen}
         options={{
           headerLeft: () => (
