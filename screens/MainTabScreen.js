@@ -213,9 +213,10 @@ const NotificationStackScreen = ({navigation}) => {
         headerTintColor: colors.text,
       }}>
       <NotificationStack.Screen
-        name="Thông báo"
+        name="Notification"
         component={NotificationScreen}
         options={{
+          title: 'Thông báo',
           headerLeft: () => (
             <Icon.Button
               name="ios-menu"
