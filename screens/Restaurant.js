@@ -17,7 +17,7 @@ const Restaurant = ({route, navigation}) => {
   const [orderItems, setOrderItems] = React.useState([]);
 
   React.useEffect(() => {
-    let {item, currentLocation} = route.params;
+    let {item} = route.params;
 
     setRestaurant(item);
   }, [route.params]);
