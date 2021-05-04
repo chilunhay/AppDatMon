@@ -130,14 +130,6 @@ const HomeStackScreen = ({navigation}) => {
         component={Restaurant}
         options={{
           title: 'Đặt món',
-          headerLeft: () => (
-            <Icon.Button
-              name="arrow-back"
-              backgroundColor={colors.background}
-              color={colors.text}
-              onPress={() => navigation.goBack()}
-            />
-          ),
         }}
       />
     </HomeStack.Navigator>
